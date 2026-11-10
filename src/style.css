@@ -263,6 +263,10 @@ input {
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: hsl(0, 0%, 90%);
+  /* Aísla el stacking context de Leaflet para que no tape la tarjeta */
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------- Footer ---------- */
@@ -304,7 +308,7 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
     width: min(90%, 1050px);
-    z-index: 10;
+    z-index: 20;
   }
 
   .map {
