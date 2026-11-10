@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "vite": "^8.3.7"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }

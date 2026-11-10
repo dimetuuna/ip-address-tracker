@@ -2,36 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Track any IP address or domain and see its location, timezone and ISP on an interactive map.">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 <body>
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero__title">IP Address Tracker</h1>
 
-  IP Address Tracker
+      <form class="search" id="search-form" novalidate>
+        <label class="visually-hidden" for="search-input">Search for any IP address or domain</label>
+        <input
+          class="search__input"
+          id="search-input"
+          name="query"
+          type="text"
+          inputmode="url"
+          autocomplete="off"
+          placeholder="Search for any IP address or domain"
+          aria-describedby="search-error"
+        >
+        <button class="search__clear" type="button" aria-label="Clear search" hidden>×</button>
+        <button class="search__button" type="submit" aria-label="Search">
+          <img src="./images/icon-arrow.svg" alt="" width="11" height="14">
+        </button>
+        <p class="search__error" id="search-error" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+  </header>
 
-  Search for any IP address or domain
+  <main class="main">
+    <div class="container">
+      <section class="result-card" id="result-card" aria-live="polite" aria-busy="false">
+        <!-- TODO: poblar dinámicamente desde main.js -->
+        <dl class="result-card__list">
+          <div class="result-card__item">
+            <dt class="result-card__label">IP Address</dt>
+            <dd class="result-card__value" id="ip-value">—</dd>
+          </div>
+          <div class="result-card__item">
+            <dt class="result-card__label">Location</dt>
+            <dd class="result-card__value" id="location-value">—</dd>
+          </div>
+          <div class="result-card__item">
+            <dt class="result-card__label">Timezone</dt>
+            <dd class="result-card__value" id="timezone-value">UTC <!-- offset dinámico --></dd>
+          </div>
+          <div class="result-card__item">
+            <dt class="result-card__label">ISP</dt>
+            <dd class="result-card__value" id="isp-value">—</dd>
+          </div>
+        </dl>
+      </section>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
+      <div class="map" id="map" role="region" aria-label="Map showing the location of the IP address"></div>
+    </div>
+  </main>
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </footer>
 
