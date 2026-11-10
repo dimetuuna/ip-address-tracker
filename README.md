@@ -4,7 +4,7 @@ A responsive IP geolocation tracker built as a [Frontend Mentor](https://www.fro
 
 ## Demo
 
-- Live site: _add your deployed URL here_
+- Live site: https://ip-address-tracker-master-ochre.vercel.app
 - Repository: _add your repo URL here_
 
 ## Features
