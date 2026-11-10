@@ -1,0 +1,16 @@
+/* Base styles for the IP Address Tracker */
+
+:root {
+  --color-gray-950: hsl(0, 0%, 17%);
+  --color-gray-400: hsl(0, 0%, 58%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
