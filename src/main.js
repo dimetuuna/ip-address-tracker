@@ -103,6 +103,7 @@ function initOrUpdateMap(lat, lng) {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 19,
+      detectRetina: true,
     }).addTo(map);
   } else {
     map.setView([lat, lng], 13);
