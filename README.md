@@ -5,7 +5,9 @@ A responsive IP geolocation tracker built as a [Frontend Mentor](https://www.fro
 ## Demo
 
 - Live site: https://ip-address-tracker-master-ochre.vercel.app
-- Repository: _add your repo URL here_
+- Repository: https://github.com/dimetuuna/ip-address-tracker
+
+![Desktop preview](screenshots/desktop.jpg)
 
 ## Features
 
