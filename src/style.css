@@ -92,9 +92,9 @@ input {
   margin-inline: auto;
 }
 
-/* Focus visible (accesibilidad) */
+/* Focus visible (accesibilidad) — sutil pero perceptible */
 :focus-visible {
-  outline: 3px solid var(--color-gray-950);
+  outline: 2px solid var(--color-gray-700);
   outline-offset: 2px;
 }
 
