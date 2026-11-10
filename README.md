@@ -74,6 +74,3 @@ The app runs at `http://localhost:5173`.
 - Vite only exposes env vars prefixed with `VITE_` to the client (`import.meta.env.VITE_*`).
 - Static files must live in `public/` to be copied to `dist/` in production.
 
-## Acknowledgements
-
-Challenge by [Frontend Mentor](https://www.frontendmentor.io). Coded by [Your Name Here](https://github.com/your-username).
